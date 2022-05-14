@@ -20,7 +20,10 @@
         "packages/nx-ddd-architecture/src/index.ts"
       ],
       "@nx-enterprise/nx-php": ["packages/nx-php/src/index.ts"],
-      "@nx-enterprise/nx-python": ["packages/nx-python/src/index.ts"]
+      "@nx-enterprise/nx-python": ["packages/nx-python/src/index.ts"],
+      "@nx-enterprise/nx-python-fastapi": [
+        "packages/nx-python-fastapi/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,0 +1,21 @@
+{
+  "name": "@nx-enterprise/nx-python-fastapi",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "generators": "./generators.json",
+  "executors": "./executors.json",
+  "peerDependencies": {
+    "@nrwl/devkit": "^12.10.0",
+    "shelljs": "^0.8.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nx-enterprise/nx-enterprise.git"
+  },
+  "keywords": [
+    "nx",
+    "python",
+    "poetry",
+    "generator"
+  ]
+}

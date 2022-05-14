@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "title": "Flake8 linter",
+  "description": "Lint the app with Flake8",
+  "type": "object",
+  "properties": {},
+  "required": []
+}

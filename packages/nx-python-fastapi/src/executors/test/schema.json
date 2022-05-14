@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "title": "Pytest",
+  "description": "Test the app with Pytest",
+  "type": "object",
+  "properties": {},
+  "required": []
+}

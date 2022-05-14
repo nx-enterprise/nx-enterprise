@@ -10,6 +10,8 @@
     "nx-php-e2e": "e2e/nx-php-e2e",
     "nx-python": "packages/nx-python",
     "nx-python-e2e": "e2e/nx-python-e2e",
+    "nx-python-fastapi": "packages/nx-python-fastapi",
+    "nx-python-fastapi-e2e": "e2e/nx-python-fastapi-e2e",
     "workspace": "."
   }
 }

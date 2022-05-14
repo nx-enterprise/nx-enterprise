@@ -1,0 +1,9 @@
+API_PREFIX=/api
+APP_DOMAIN=localhost
+APP_PORT=5000
+PROJECT_NAME=<%= projectTitle %>
+SERVER_NAME=
+POSTGRES_SERVER=localhost
+POSTGRES_USER=<%= pgUser %>
+POSTGRES_PASSWORD=<%= pgPassword %>
+POSTGRES_DB=<%= pgDb %>

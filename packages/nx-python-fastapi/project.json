@@ -1,0 +1,55 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/nx-python-fastapi/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/nx-python-fastapi",
+        "main": "packages/nx-python-fastapi/src/index.ts",
+        "tsConfig": "packages/nx-python-fastapi/tsconfig.lib.json",
+        "assets": [
+          "packages/nx-python-fastapi/*.md",
+          {
+            "input": "./packages/nx-python-fastapi/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-python-fastapi/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-python-fastapi",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/nx-python-fastapi",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/nx-python-fastapi/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/nx-python-fastapi"],
+      "options": {
+        "jestConfig": "packages/nx-python-fastapi/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

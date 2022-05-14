@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "<%= projectTitle %>"
+version = "0.1.0"
+description = "A Python FastAPI app"
+authors = ["Author <example@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.68.1"
+uvicorn = "^0.14.0"
+pydantic = "^1.8.2"
+psycopg2 = "^2.8.6"
+SQLAlchemy = "^1.4.23"
+starlette = "^0.14.2"
+tenacity = "^8.0.1"
+python-dotenv = "^0.19.0"
+requests = "^2.26.0"
+alembic = "^1.7.3"
+
+[tool.poetry.dev-dependencies]
+flake8 = "*"
+pytest = "*"
+mypy = "*"
+sqlalchemy-stubs = "^0.4"
+black = "21.9b0"
+
+[tool.mypy]
+ignore_missing_imports = true
+follow_imports = "skip"
+show_column_numbers = true
+disallow_untyped_defs = true
+no_warn_no_return = true
+plugins = ["sqlmypy"]
+exclude = "migrations"
+
+[tool.black]
+include = '\.py$'
+skip-string-normalization = true
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta:__legacy__"
